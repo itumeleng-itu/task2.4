@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Computer Components</title>
+    
+</head>
+<body>
+    <header class="head">
+        <p>COMPONENTS OF A COMPUTER</p>
+    </header>
+    
+    <div class="main">
+        <div class="container">
+            <div class="cpu component">
+                <button id="cpu-btn" onclick="showInfo('cpu')">CPU</button>
+            </div>
+            <div class="two">
+                <div class="cmos component">
+                    <button id="cmos-btn" onclick="showInfo('cmos')">CMOS</button>
+                </div>
+                <div class="circuit component">
+                    <button id="circuit-btn" onclick="showInfo('circuit')">CIRCUIT</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container2">
+            <div class="power component">
+                <button id="power-btn" onclick="showInfo('power')">POWER</button>
+            </div>
+            <div>
+                <div class="rom component">
+                    <button id="rom-btn" onclick="showInfo('rom')">ROM</button>
+                </div>
+                <div class="storage component">
+                    <button id="storage-btn" onclick="showInfo('storage')">STORAGE</button>
+                </div>
+                <div class="ram component">
+                    <button id="ram-btn" onclick="showInfo('ram')">RAM</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="info-display" class="info-display">
+        <h3 id="info-title">Component Information</h3>
+        <p id="info-content">Click on a component to learn more about it.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
