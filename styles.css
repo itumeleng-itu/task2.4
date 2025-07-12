@@ -1,0 +1,23 @@
+body{
+    background-color: blue;
+    padding: 100px;
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    color: lightgrey;
+    font-size: large;
+    font-weight: bolder;
+}
+.container{
+    margin: auto;
+    border: 5px solid lightgrey;
+    border-style: double;
+    padding:10px;
+}
+.colored{
+    color:yellow
+}
+.off {
+    display: flex;
+    float: initial;
+}
