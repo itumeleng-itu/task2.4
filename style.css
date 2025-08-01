@@ -133,6 +133,27 @@ body {
     .head p {
         font-size: x-large;
     }
+}
+
+@media (max-width: 600px) {
+    .head{
+        margin: auto;
+        padding: 0px;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: auto;
+        width:auto;
+        align-content: center;
+        .com{
+            align-content: center;
+            width: auto;
+            padding: 10px;
+        }
+    }
+    .head p {
+        font-size: x-large;
+    }
 
 }
 
