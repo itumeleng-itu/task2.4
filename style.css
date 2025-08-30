@@ -1,7 +1,7 @@
-
 * {
-    margin: auto;
-    padding: 25px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -9,10 +9,14 @@ body {
     background: radial-gradient(circle, rgba(191, 152, 138, 1) 0%, rgba(36, 124, 109, 1) 0%, rgba(3, 28, 38, 1) 100%);
     border: 2px solid white;
     border-radius: 10px;
-    margin: 50px;
+    margin: 20px;
+    padding: 25px;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 .head {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .head p {
@@ -22,138 +26,88 @@ body {
     text-shadow: 2px 2px 4px black;
     letter-spacing: 1px;
 }
-.bios a{
+
+.bios a {
     color: white;
     text-decoration: none;
 }
+
 .bios a:hover {
     color: cadetblue;
 }
 
-.container{
+.container {
     display: grid;
-    grid-template-columns: auto auto auto;
-    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vh;
+    margin: 20px auto;
+    padding: 20px;
     border: 2px solid white;
     border-radius: 10px;
-    background: #BF988A;
     background: radial-gradient(circle, rgba(191, 152, 138, 1) 0%, rgba(36, 124, 109, 1) 0%, rgba(3, 28, 38, 1) 100%);
-    gap:2vh;
-    width:50%;
+    width: 80%;
+    max-width: 800px;
 }
 
-
-.cpu{
+.com {
     border: 2px solid white;
     border-radius: 10%;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
-}
-.ram{
-    border: 2px solid white;
-    border-radius: 10%;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
-}
-.cmos{
-    border: 2px solid white;
-    border-radius: 90%;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
-}
-.storage{
-    border: 2px solid white;
-    border-radius: 10%;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder
-}
-.rom{
-    border: 2px solid white;
-    border-radius: 10%;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder
-}
-.power{
-    border: 2px solid white;
-    border-radius: 10%;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder
-}
-.button{
-    text-shadow: 2px 2px 4px black;
-}
-.button:hover{
-    color: cadetblue;
-    
-}
-
-
-
-.display img {
-    text-shadow: 2px 2px 4px black;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding:20px
+    height: 100px;
+    cursor: pointer;
+    transition: all 0.3s;
 }
 
+.com:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.com p {
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px black;
+}
+
+.display {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    border: 1px solid white;
+}
 
 .display h3 {
     color: white;
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: 10px;
     font-size: 1.5em;
-    text-align: center;
 }
 
 .display p {
-    line-height: 1.6;
-    margin-bottom: 2vh;
     color: white;
-    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
-@media (max-width: 1500px) {
-    .main {
+.display img {
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
         grid-template-columns: 1fr;
     }
-    .container{
-        display: grid;
-        grid-template-columns: auto;
-    }
-    .cpu, .cmos, .ram , .rom , .storage, .power{
-        position: static;
-    }
     .head p {
         font-size: x-large;
     }
 }
-
-@media (max-width: 600px) {
-    .head{
-        margin: auto;
-        padding: 0px;
-    }
-    .container{
-        display: grid;
-        grid-template-columns: auto;
-        width:auto;
-        align-content: center;
-        .com{
-            align-content: center;
-            width: auto;
-            padding: 10px;
-        }
-    }
-    .head p {
-        font-size: x-large;
-    }
-
-}
-
